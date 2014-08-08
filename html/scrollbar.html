@@ -10,7 +10,6 @@
 	<script type="text/javascript" src="../js/scrollbar.js"></script>
 
 
-
 </head>
 <body>
 
@@ -68,40 +67,11 @@
 
 		content:"wzw_scroll_content",
 		dis:30,
-		callback:function(){
-
-			if(a == 1)
-			{
-				$(".wzw_Scroll_box").find('.wzw_scroll_content').append('<p style="height:300px">test cooooo</p>');
-				$(".wzw_Scroll_box").scrollBar();
-
-				a = 2;
-			}
-		}
+      hover:false
 
 	});
 
-	$(".wzw_Scroll_box1").scrollBar({
-
-		content:"wzw_scroll_content"
-
-	});
-
-
-
-
-	$(".btn").on('click',function(){
-
-		$('.wzw_scroll_content').append('<p>new text</p>')
-
-
-		$(".wzw_Scroll_box").scrollBar({
-
-			content:"wzw_scroll_content"
-
-		});
-	})
-
+	
 </script>
 
 

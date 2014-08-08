@@ -1,8 +1,8 @@
 
 .wzw_Scroll_box {width:400px; height:400px; border:1px solid #ccc; position:relative; overflow:hidden;}
 .wzw_scroll_content {position:absolute; width: 100%; top:0px;}
-.wzw_Scroll_btn {width:2px; height:100%; background:#d8d8d8; position:absolute; right: 5px; display: none;}
-.wzw_Scroll_bar {width:4px; height:20px; background:#363636; position:absolute; left: -1px; border-radius: 4px; cursor:pointer;}
+.wzw_Scroll_btn {width:10px; height:100%; background:#d8d8d8; position:absolute; right: 0px;}
+.wzw_Scroll_bar {width:10px; height:20px; background:#363636; position:absolute; left: 0px; cursor:pointer;}
 
 
 

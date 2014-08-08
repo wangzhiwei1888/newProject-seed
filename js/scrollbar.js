@@ -9,6 +9,7 @@
 			btn:'wzw_Scroll_btn',
 			bar:'wzw_Scroll_bar',
 			dis:120,
+			hover:true,
 			callback:function(){}
 
 		};
@@ -126,14 +127,19 @@
 				};
 			};
 
-			$(this).on("mouseenter",function(){
+			if(scrollBar.hover)
+			{
+				btn.hide();
+				$(this).on("mouseenter",function(){
 
-				btn.fadeIn();
-			})
-			$(this).on("mouseleave",function(){
+					btn.fadeIn();
+				})
+				$(this).on("mouseleave",function(){
 
-				btn.fadeOut();
-			})
+					btn.fadeOut();
+				})	
+			}
+			
 
 		}
 

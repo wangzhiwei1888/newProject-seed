@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body style="background:red;">
+
+	<div id="resumeScore">
+		<div class="score fl">
+			<canvas id="doughnutChartCanvas" width="60" height="60"></canvas>
+				<div class="scoreVal" style="display:none;"><span>25</span>分</div>
+		</div>	
+	</div><!--end #resumeScore-->
+
+
+	<script src="http://www.lagou.com/js/libs/jquery.1.10.1.min.js?v=1.5.5.5_0613" type="text/javascript"></script>
+	<script type="text/javascript" src="../js/Chart.min.js"></script>
+	<script type="text/javascript">
+
+
+	function scoreChange(a) {
+		function e() {
+			var b = document.getElementById("doughnutChartCanvas").getContext("2d");
+			new Chart(b).Doughnut(c, d), $("#resumeScore .scoreVal span").text(a).parent().fadeIn(200);
+		}
+		var b = 360 * parseInt(a) / 100,
+			c = [{
+				value: b,
+				color: "#009a6d"
+			}, {
+				value: 360 - b,
+				color: "#ffffff"
+			}],
+			d = {
+				percentageInnerCutout: 80,
+				segmentShowStroke: !1,
+				animationEasing: "easeOutQuart"
+			};
+		setTimeout(e, 300)
+	}
+	scoreChange($("#resumeScore .scoreVal span").text());
+
+
+	</script>
+</body>
+</html>

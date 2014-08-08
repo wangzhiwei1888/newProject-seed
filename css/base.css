@@ -1,0 +1,25 @@
+/* 全局CSS定义 */
+body{margin:0;padding:0;background:#FFF;color:#666;font:12px '宋体';}
+div,form,ul,ol,li,span,p,dl,dt,dd,img{margin:0;padding:0;border:0;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-size:12px;font-weight:normal;}
+ul,ol,li{list-style:none}
+table,td,input,textarea{font-size:12px}
+/* 链接颜色 */
+a{color:#333;text-decoration:none;}
+a:hover{color:#C00;text-decoration:underline;}
+
+
+.show{display:block;}
+.hidden{display:none;}
+.area{width:100%;margin:0 auto;}
+.clear,.area{zoom:1}
+.area:after,.clear:after{content:".";display:block;visibility:hidden;height:0;clear:both;}
+
+/* 文字列表属性 */
+.list14 li,.list12 li{padding:3px 0;color:#333;font-size:12px;line-height:16px;text-align:left;}
+.list14 li{padding:4px 0;font-size:14px;}
+/* 浮动属性 */
+.left,.center,.l,.right,.r{display:inline;float:left;}
+.right,.r{float:right;}
+
+.area{width:950px;}/*页面属性 */
